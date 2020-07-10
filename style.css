@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #FFDE9A;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background-image: url("https://t4.ftcdn.net/jpg/02/38/24/07/240_F_238240773_Y8B8vQJyrKZnHBdQEhD0MnrjZu0C4GbS.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    flex-grow: 1;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    flex-grow: 2;
+}
+
+.event-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.event-code-name {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #FFDE9A;
+    border-radius: 15px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.event-code-name:before {
+    content: ".";
+}
+
+.event-code {
+    font-weight: 900;
+    font-size: larger;
+    color: #335166;
+    border-radius: 5px;
+    width: 100%;
+    height: 50%;
+    background-color: #FFDE9A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
